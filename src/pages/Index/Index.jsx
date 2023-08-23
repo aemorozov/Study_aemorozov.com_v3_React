@@ -1,7 +1,9 @@
-function Index() {
+import classes from "./Index.module.css";
+
+function Index(props) {
   return (
     <div>
-      <p>Index.jsx</p>
+      <h1 className="h1 alignCenter">{props.pageName}</h1>
     </div>
   );
 }

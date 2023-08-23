@@ -1,24 +1,29 @@
 import { NavLink } from "react-router-dom";
 import classes from "./Header.module.css";
 
-function Header() {
+function Header(props) {
+  const home = props.pages.home;
+  const portfolio = props.pages.portfolio;
+  const contacts = props.pages.contacts;
+  const about = props.pages.about;
+
   return (
     <>
       <div className={classes.navItems}>
-        <NavLink to="/" className={setActive}>
-          Home
+        <NavLink to={home.url} className={setActive}>
+          {home.name}
         </NavLink>
-        <NavLink to="/portfolio" className={setActive}>
-          Portfolio
+        <NavLink to={portfolio.url} className={setActive}>
+          {portfolio.name}
         </NavLink>
-        <NavLink to="/contacts" className={setActive}>
-          Contacts
+        <NavLink to={contacts.url} className={setActive}>
+          {contacts.name}
         </NavLink>
-        <NavLink to="/about" className={setActive}>
-          About
+        <NavLink to={about.url} className={setActive}>
+          {about.name}
         </NavLink>
       </div>
-      <div className={classes.closeButton}></div>
+      {/* <div className={classes.closeButton}></div> */}
     </>
   );
 }

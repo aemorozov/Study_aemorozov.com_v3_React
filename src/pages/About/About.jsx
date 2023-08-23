@@ -1,7 +1,7 @@
-function About() {
+function About(props) {
   return (
     <div>
-      <p>About.jsx</p>
+      <h1 className="h1 alignCenter">{props.pageName}</h1>
     </div>
   );
 }

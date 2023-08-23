@@ -1,7 +1,7 @@
-function Portfolio() {
+function Portfolio(props) {
   return (
     <div>
-      <p>Portfolio.jsx</p>
+      <h1 className="h1 alignCenter">{props.pageName}</h1>
     </div>
   );
 }

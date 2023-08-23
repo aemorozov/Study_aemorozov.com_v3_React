@@ -1,7 +1,7 @@
-function Contacts() {
+function Contacts(props) {
   return (
     <div>
-      <p>Contacts.jsx</p>
+      <h1 className="h1 alignCenter">{props.pageName}</h1>
     </div>
   );
 }
