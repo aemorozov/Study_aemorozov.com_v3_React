@@ -16,16 +16,16 @@ function App(props) {
     <BrowserRouter>
       <div className={menuActive ? "App headerActive" : "App"}>
         <header className="header">
-          <Header pages={props.pages} menuActive={menuActive} setMenuActive={setMenuActive} />
+          <Header menuItems={props.menuItems} menuActive={menuActive} setMenuActive={setMenuActive} />
         </header>
         <div className="content">
           <TopButtons menuActive={menuActive} setMenuActive={setMenuActive} />
           <div className="contentBlock">
             <Routes>
-              <Route exact path="/" element={<Index page={props.pages.home} />} />
-              <Route path="/portfolio" element={<Portfolio page={props.pages.portfolio} />} />
-              <Route path="/contacts" element={<Contacts page={props.pages.contacts} />} />
-              <Route path="/about" element={<About page={props.pages.about} />} />
+              <Route exact path="/" element={<Index page={props.menuItems.home} />} />
+              <Route path="/portfolio" element={<Portfolio page={props.menuItems.portfolio} />} />
+              <Route path="/about" element={<About page={props.menuItems.about} />} />
+              <Route path="/contacts" element={<Contacts page={props.menuItems.contacts} />} />
             </Routes>
           </div>
         </div>

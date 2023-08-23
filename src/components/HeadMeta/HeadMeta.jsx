@@ -1,10 +1,12 @@
-import { Helmet } from "react-helmet";
+import { Helmet, HelmetProvider } from "react-helmet-async";
 
 function HeadMeta(props) {
   return (
-    <Helmet>
-      <title>{props.page.name}</title>
-    </Helmet>
+    <HelmetProvider>
+      <Helmet>
+        <title>aemorozov.com | {props.page.name}</title>
+      </Helmet>
+    </HelmetProvider>
   );
 }
 

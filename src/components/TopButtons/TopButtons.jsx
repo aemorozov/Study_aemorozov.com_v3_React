@@ -1,21 +1,20 @@
-import classes from "./TopButtons.module.css";
+import styles from "./TopButtons.module.css";
 
 function TopButtons(props) {
   return (
-    <div className={classes.topButtons}>
-      <div className={classes.backButtonBlock}>
-        <div className={classes.backButton}>{"<"} Back</div>
+    <div className={styles.topButtons}>
+      <div className={styles.backButtonBlock}>
+        <div className={styles.backButton}>{"<"} Back</div>
       </div>
       <div
-        className={classes.forBurgerMenu}
+        className={styles.forBurgerMenu}
         onClick={() => {
           props.setMenuActive(!props.menuActive);
-          console.log(props.menuActive);
         }}
       >
-        <div className={classes.menuButton}></div>
-        <div className={classes.menuButton}></div>
-        <div className={classes.menuButton}></div>
+        <div className={styles.menuButton}></div>
+        <div className={styles.menuButton}></div>
+        <div className={styles.menuButton}></div>
       </div>
     </div>
   );

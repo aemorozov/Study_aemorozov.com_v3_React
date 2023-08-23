@@ -1,4 +1,4 @@
-const pages = {
+const menuItems = {
     home: {
         url: "/",
         name: "Home",
@@ -13,8 +13,8 @@ const pages = {
     },
     about: {
         url: "/about",
-        name: "About",
+        name: "About me",
     },
 };
 
-export default pages
+export default menuItems
