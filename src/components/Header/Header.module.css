@@ -1,0 +1,48 @@
+.navItems {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  margin-top: 30px;
+}
+
+a {
+  color: #edf6f9;
+  width: 100vw;
+  text-align: center;
+  height: 45px;
+  padding-top: 10px;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+.active {
+  color: rgb(255, 210, 155);
+}
+
+.closeButton {
+  position: absolute;
+  box-sizing: border-box;
+  top: 0;
+  right: 0;
+  width: 80px;
+  height: 80px;
+  padding: 10px;
+  font-size: 48px;
+  line-height: 48px;
+  cursor: pointer;
+}
+
+.closeButton::after {
+  content: "\00d7";
+  display: inline;
+  color: #edf6f9;
+  padding: 0;
+  margin: 0;
+  line-height: 48px;
+  transition: 0.5s ease;
+}
+
+.closeButton:hover::after {
+  color: rgb(255, 210, 155);
+}
