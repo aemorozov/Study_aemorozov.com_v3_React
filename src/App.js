@@ -7,16 +7,19 @@ import Index from "./pages/Index/Index";
 import About from "./pages/About/About";
 import Portfolio from "./pages/Portfolio/Portfolio";
 import Contacts from "./pages/Contacts/Contacts";
+import { useState } from "react";
 
 function App(props) {
+  const [menuActive, setMenuActive] = useState(false)
+
   return (
     <BrowserRouter>
-      <div className="App">
+      <div className={menuActive ? 'App' : 'App headerActive'}>
         <header className="header">
-          <Header pages={props.pages} />
+          <Header pages={props.pages} menuActive={menuActive} setMenuActive={setMenuActive} />
         </header>
         <div className="content">
-          <TopButtons />
+          <TopButtons menuActive={menuActive} setMenuActive={setMenuActive} />
           <div className="contentBlock">
             <Routes>
               <Route exact path="/" element={<Index pageName={props.pages.home.name} />} />
@@ -29,6 +32,10 @@ function App(props) {
       </div>
     </BrowserRouter>
   );
+}
+
+function headerActive() {
+
 }
 
 export default App;

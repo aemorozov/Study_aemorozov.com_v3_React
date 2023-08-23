@@ -15,17 +15,21 @@
   position: relative;
 }
 
+.headerActive {
+  margin-top: 0;
+}
+
 .content {
   background-color: #edf6f9;
   width: 90%;
   margin: 0;
   height: 200vh;
   color: #005057;
-  padding: 20px 5%;
+  padding: 10px 5%;
 }
 
 .contentBlock {
-  margin-top: -67px;
+  margin-top: -68px;
 }
 
 .alignCenter {
