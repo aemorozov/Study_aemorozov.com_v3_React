@@ -1,7 +1,7 @@
 import logo from "./logo.svg";
 import "./App.css";
 import Header from "./components/Header/Header";
-import TopButtons from "./components/TopButtons/TopButtons"
+import TopButtons from "./components/TopButtons/TopButtons";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index/Index";
 import About from "./pages/About/About";
@@ -10,11 +10,11 @@ import Contacts from "./pages/Contacts/Contacts";
 import { useState } from "react";
 
 function App(props) {
-  const [menuActive, setMenuActive] = useState(false)
+  const [menuActive, setMenuActive] = useState(false);
 
   return (
     <BrowserRouter>
-      <div className={menuActive ? 'App' : 'App headerActive'}>
+      <div className={menuActive ? "App headerActive" : "App"}>
         <header className="header">
           <Header pages={props.pages} menuActive={menuActive} setMenuActive={setMenuActive} />
         </header>
@@ -22,10 +22,10 @@ function App(props) {
           <TopButtons menuActive={menuActive} setMenuActive={setMenuActive} />
           <div className="contentBlock">
             <Routes>
-              <Route exact path="/" element={<Index pageName={props.pages.home.name} />} />
-              <Route path="/portfolio" element={<Portfolio pageName={props.pages.portfolio.name} />} />
-              <Route path="/contacts" element={<Contacts pageName={props.pages.contacts.name} />} />
-              <Route path="/about" element={<About pageName={props.pages.about.name} />} />
+              <Route exact path="/" element={<Index page={props.pages.home} />} />
+              <Route path="/portfolio" element={<Portfolio page={props.pages.portfolio} />} />
+              <Route path="/contacts" element={<Contacts page={props.pages.contacts} />} />
+              <Route path="/about" element={<About page={props.pages.about} />} />
             </Routes>
           </div>
         </div>
@@ -34,8 +34,6 @@ function App(props) {
   );
 }
 
-function headerActive() {
-
-}
+function headerActive() { }
 
 export default App;
