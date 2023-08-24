@@ -8,6 +8,7 @@ import About from "./pages/About/About";
 import Portfolio from "./pages/Portfolio/Portfolio";
 import Contacts from "./pages/Contacts/Contacts";
 import { useState } from "react";
+import Footer from "./components/Footer/Footer";
 
 function App(props) {
   const [menuActive, setMenuActive] = useState(false);
@@ -29,6 +30,7 @@ function App(props) {
             </Routes>
           </div>
         </div>
+        <Footer />
       </div>
     </BrowserRouter>
   );

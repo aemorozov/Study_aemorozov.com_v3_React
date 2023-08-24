@@ -1,16 +1,17 @@
 .App {
   display: flex;
   flex-direction: column;
-  margin-top: -270px;
+  margin-top: -330px;
   overflow-x: hidden;
   transition: 0.3s ease;
+  background-color: #edf6f9;
 }
 
 .header {
   background-color: #006d77;
   width: 90%;
   margin: 0;
-  height: 270px;
+  height: 330px;
   padding: 0 5%;
   position: relative;
 }
@@ -21,11 +22,13 @@
 
 .content {
   background-color: #edf6f9;
+  max-width: 1600px;
   width: 90%;
   margin: 0;
-  height: 200vh;
+  height: 120vh;
   color: #005057;
   padding: 10px 5%;
+  margin: 0 auto;
 }
 
 .contentBlock {

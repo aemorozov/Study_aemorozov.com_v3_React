@@ -1,0 +1,20 @@
+.footer {
+  background-color: #006d77;
+  width: 90%;
+  margin: 0;
+  height: 330px;
+  padding: 0 5%;
+  position: relative;
+  text-align: center;
+}
+
+.link {
+  display: block;
+  width: fit-content;
+  position: absolute;
+  bottom: 10%;
+  font-size: 16px;
+  color: rgb(146, 191, 194);
+  left: 50%;
+  transform: translateX(-50%);
+}
