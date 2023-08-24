@@ -1,7 +1,7 @@
 import HeadMeta from "../../components/HeadMeta/HeadMeta";
 import toTop from "../../functions/toTop/toTop";
 
-function Contacts(props) {
+function Development(props) {
   toTop();
   return (
     <div>
@@ -11,4 +11,4 @@ function Contacts(props) {
   );
 }
 
-export default Contacts;
+export default Development;

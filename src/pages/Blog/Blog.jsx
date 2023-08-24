@@ -1,6 +1,8 @@
 import HeadMeta from "../../components/HeadMeta/HeadMeta";
+import toTop from "../../functions/toTop/toTop";
 
-function Portfolio(props) {
+function Blog(props) {
+  toTop();
   return (
     <div>
       <HeadMeta page={props.page} />
@@ -9,4 +11,4 @@ function Portfolio(props) {
   );
 }
 
-export default Portfolio;
+export default Blog;

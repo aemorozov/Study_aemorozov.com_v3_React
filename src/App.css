@@ -1,3 +1,7 @@
+body {
+  transition: 0.3s ease;
+}
+
 .App {
   display: flex;
   flex-direction: column;
@@ -25,7 +29,7 @@
   max-width: 1600px;
   width: 90%;
   margin: 0;
-  height: 120vh;
+  min-height: 90vh;
   color: #005057;
   padding: 10px 5%;
   margin: 0 auto;

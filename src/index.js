@@ -3,12 +3,12 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import menuItems from "./data/data"
+import { menuItems, forIndexPage } from "./data/data"
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App menuItems={menuItems} />
+    <App menuItems={menuItems} forIndexPage={forIndexPage} />
   </React.StrictMode>
 );
 
