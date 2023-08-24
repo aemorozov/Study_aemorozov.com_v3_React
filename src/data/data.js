@@ -38,6 +38,8 @@ export const forIndexPage = [
         alt: "Aleksei Morozov - Traveling",
         title: menuItems.traveling.name,
         link: menuItems.traveling.url,
-        text: "some text",
+        text: `This is trips part of my life. After developing my favorite thing is travel. Now I live in Yerevan, Armenia 
+        and every weekend I go to the mountains or travel other interesting places. In Armenia I start my little travel blog
+        and I will write here about some interesting trips. For more photos, stories and videos you can follow my socials.`,
     },
 ];
