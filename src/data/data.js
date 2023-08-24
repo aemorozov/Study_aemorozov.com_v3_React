@@ -27,7 +27,7 @@ export const forIndexPage = [
         alt: "Aleksei Morozov - Development",
         title: menuItems.development.name,
         link: menuItems.development.url,
-        text: `Hello everybody! In this developer part of my life I will write about my projects and work.
+        text: `Hello, everybody! In this developer part of my life I will write about my projects and work.
         I have various experience in development, computer technologies and repair electronics. 
         Right now I am developing APP with React, API, JavaScript and other technologies for a little med-tech startup, as well as
         I work in repair shop with computers and security networks.
