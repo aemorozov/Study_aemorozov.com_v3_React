@@ -27,11 +27,11 @@ export const forIndexPage = [
         alt: "Aleksei Morozov - Development",
         title: menuItems.development.name,
         link: menuItems.development.url,
-        text: `In this developer part of my life I will write about my projects and work.
+        text: `Hello! My name is Aleksei. In this developer part of my life I will write about my projects and work.
         I have various experience in development, computer technologies and repair electronics. 
-        Right now I am developing APP with React, API, JavaScript and other technologies for a little med-tech startup, 
+        Right now I am developing Single Page Applications (SPA) with React, API, JavaScript and other technologies for a little med-tech startup, 
         as well as I work in repair shop with computers and security networks.
-        You can download my CV in this block and read more about my professional life.`,
+        In this block you can download my CV and read more about my professional life.`,
     },
     {
         imgUrl: require("../img/photo_2023-08-23_22-46-32.jpg"),

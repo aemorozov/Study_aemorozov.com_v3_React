@@ -8,11 +8,20 @@
   padding: 20px 10px 20px 10px;
   font-size: 24px;
   font-weight: 600;
+  text-align: left;
 }
 
 .backButton {
   opacity: 0;
   transition: 0.3s ease;
+  cursor: pointer;
+  color: #005057;
+  display: block;
+  margin: 0;
+}
+
+.opacity__1 {
+  opacity: 1;
 }
 
 .menuButton {

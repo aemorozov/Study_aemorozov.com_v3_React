@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { menuItems, forIndexPage } from "./data/data"
+import { backAddress } from './functions/backButton/backButton';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
