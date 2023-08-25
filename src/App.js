@@ -9,6 +9,7 @@ import Contacts from "./pages/Contacts/Contacts";
 import Blog from "./pages/Blog/Blog";
 import { useState } from "react";
 import Footer from "./components/Footer/Footer";
+import Post1 from "./pages/Blog/Post1/Post1";
 
 function App(props) {
   const [menuActive, setMenuActive] = useState(false);
@@ -37,6 +38,7 @@ function App(props) {
               />
               <Route path={props.menuItems.contacts.url} element={<Contacts page={props.menuItems.contacts} />} />
               <Route path={props.menuItems.blog.url} element={<Blog page={props.menuItems.blog} />} />
+              <Route path='/blog/post1' element={<Post1 />} />
             </Routes>
           </div>
         </div>

@@ -1,12 +1,12 @@
 import HeadMeta from "../../components/HeadMeta/HeadMeta";
-import { ContentBlockLeftImg, ContentBlockRightImg } from "../../components/ContentBlock/ContentBlock";
+import { ContentBlockLeftImg } from "../../components/ContentBlock/ContentBlock";
 import toTop from "../../functions/toTop/toTop";
 
 function Index(props) {
   toTop();
   return (
     <>
-      <h1 className="h1 alignCenter">Hello! Welcome to my website. My name is Aleksei Morozov.</h1>
+      {/* <h1 className="h1 alignCenter">Hello! My name is Aleksei Morozov.</h1> */}
       <HeadMeta page={props.page} />
       {props.forIndexPage.map((data) => {
         return <ContentBlockLeftImg data={data} key={data.title} />;
