@@ -3,14 +3,14 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
-  margin-top: 30px;
+  margin-top: 25px;
 }
 
 a {
   color: #edf6f9;
   width: 100vw;
   text-align: center;
-  height: 45px;
+  height: 35px;
   padding-top: 10px;
   text-decoration: none;
   font-size: 24px;

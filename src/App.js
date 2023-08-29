@@ -18,7 +18,7 @@ function App(props) {
   const isMainPage = window.location.href.split("/")[3];
   const [backButton, setBackButton] = useState(!isMainPage ? false : true);
 
-  const [backAddress, setBackAddress] = useState('/');
+  const [backAddress, setBackAddress] = useState("/");
 
   return (
     <BrowserRouter>
