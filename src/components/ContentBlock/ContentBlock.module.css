@@ -16,7 +16,8 @@
 }
 
 .img {
-  width: 300px;
+  min-width: 320px;
+  width: 320px;
   transform: translateY(-33%);
 }
 
