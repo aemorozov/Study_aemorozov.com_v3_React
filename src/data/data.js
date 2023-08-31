@@ -42,4 +42,20 @@ export const forIndexPage = [
         and every weekend I go to the mountains or travel other interesting places. In Armenia I start my little travel blog
         and I will write here about some interesting trips. For more photos, stories and videos you can follow my socials.`,
     },
+    {
+        imgUrl: process.env.PUBLIC_URL + "img/photo_2023-08-31_11-20-42.jpg",
+        alt: "Aleksei Morozov - Blog",
+        title: menuItems.blog.name,
+        link: menuItems.blog.url,
+        text: `Here I write about some interesting things about my life, work and travel. There are mixed content and you can find here random post and themes.`,
+    },
+    {
+        imgUrl: process.env.PUBLIC_URL + "img/Screenshot_2023-08-31_113219.png",
+        alt: "Aleksei Morozov - Contacts",
+        title: menuItems.contacts.name,
+        link: menuItems.contacts.url,
+        text: `Contacts and feedback form.`,
+    },
 ];
+
+
