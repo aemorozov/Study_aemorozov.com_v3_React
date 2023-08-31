@@ -23,7 +23,7 @@ export const menuItems = {
 
 export const forIndexPage = [
     {
-        imgUrl: require("../img/photo_2023-08-23_22-46-34.jpg"),
+        imgUrl: process.env.PUBLIC_URL + "img/photo_2023-08-23_22-46-34.jpg",
         alt: "Aleksei Morozov - Development",
         title: menuItems.development.name,
         link: menuItems.development.url,
@@ -34,7 +34,7 @@ export const forIndexPage = [
         In this block you can download my CV and read more about my professional life.`,
     },
     {
-        imgUrl: require("../img/photo_2023-08-23_22-46-32.jpg"),
+        imgUrl: process.env.PUBLIC_URL + "img/photo_2023-08-23_22-46-32.jpg",
         alt: "Aleksei Morozov - Traveling",
         title: menuItems.traveling.name,
         link: menuItems.traveling.url,
