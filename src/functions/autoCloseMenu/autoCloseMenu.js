@@ -1,3 +1,3 @@
 export const autoCloseMenu = (setMenuActive) => {
-    setTimeout(setMenuActive, 200)
+    setTimeout(setMenuActive, 300)
 };
