@@ -49,6 +49,6 @@
 @media screen and (max-width: 1023px) {
   .topButtons {
     width: 100vw;
-    transform: translateX(-30px);
+    transform: translateX(-25px);
   }
 }
