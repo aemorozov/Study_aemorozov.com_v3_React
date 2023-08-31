@@ -11,6 +11,7 @@ import Post1 from "./pages/Blog/Post1/Post1";
 import { useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { changeBackButton, letsGoBack } from "./functions/backButton/backButton";
+import { autoCloseMenu } from "./functions/autoCloseMenu/autoCloseMenu";
 
 function App(props) {
   const [menuActive, setMenuActive] = useState(false);
@@ -29,7 +30,12 @@ function App(props) {
           letsGoBack(setBackAddress);
         }}
       >
-        <header className="header">
+        <header
+          className="header"
+          onClick={() => {
+            autoCloseMenu(setMenuActive);
+          }}
+        >
           <Header menuItems={props.menuItems} menuActive={menuActive} />
         </header>
         <div className="content">
