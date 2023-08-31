@@ -4,11 +4,11 @@
 }
 
 .backButtonBlock {
-  width: 150px;
+  width: 100px;
   padding: 20px 10px 20px 10px;
   font-size: 24px;
   font-weight: 600;
-  text-align: left;
+  text-align: center;
   cursor: default;
 }
 
@@ -36,6 +36,7 @@
   position: relative;
   border-radius: 4px;
   margin: 5px;
+  margin-top: 25%;
 }
 
 .forBurgerMenu {

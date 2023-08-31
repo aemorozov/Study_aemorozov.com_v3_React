@@ -5,6 +5,13 @@ function Footer() {
   return (
     <div className={styles.footer}>
       <div className={styles.linksBlock}>
+        <Link to="https://instagram.com/alexejmorozov" target="_blank">
+          <img
+            className={styles.insta}
+            src={process.env.PUBLIC_URL + "img/Instagram-logo.png"}
+            alt="aemorozov instargram"
+          />
+        </Link>
         <Link to={"https://react.dev/"} target="_blank" className={styles.link}>
           Powered by <span className={styles.react}>React</span>
         </Link>
