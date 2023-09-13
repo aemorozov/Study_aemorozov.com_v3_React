@@ -13,19 +13,16 @@
 }
 
 .backButton {
-  opacity: 0;
   transition: 0.3s ease;
   color: #005057;
-  display: block;
   margin: 0;
-  font-size: 0;
-  display: block;
+  font-size: 18px;
   height: 42px;
+  display: none;
 }
 
 .opacity__1 {
-  opacity: 1;
-  font-size: 18px;
+  display: block;
   cursor: pointer;
 }
 
@@ -48,7 +45,8 @@
 
 @media screen and (max-width: 1023px) {
   .topButtons {
-    width: 100vw;
-    transform: translateX(-25px);
+    margin: 20px 0;
+    width: 105%;
+    transform: translateX(-2.5%);
   }
 }
