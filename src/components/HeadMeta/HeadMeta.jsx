@@ -5,6 +5,7 @@ function HeadMeta(props) {
     <HelmetProvider>
       <Helmet>
         <title>aemorozov.com | {props.page.name}</title>
+        <meta name="description" content={"Aleksei Morozov Frontend Developer - " + props.page.name} />
       </Helmet>
     </HelmetProvider>
   );
