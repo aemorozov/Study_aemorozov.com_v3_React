@@ -4,7 +4,7 @@ import styles from "./ContentItem.module.css";
 const ContentItem = (props) => {
   return (
     <div className={styles.item}>
-      <Link to={props.item.link}>
+      <Link to={props.item.link} target="_blank">
         <img className={styles.backImg} src={props.item.imgUrl} alt={props.item.alt} />
         <div className={styles.content}>
           <h2>{props.item.title}</h2>
