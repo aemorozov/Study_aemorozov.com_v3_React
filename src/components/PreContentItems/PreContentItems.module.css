@@ -1,0 +1,19 @@
+.items {
+  display: flex;
+  align-content: center;
+  flex-wrap: wrap;
+  width: fit-content;
+  margin: 20px auto;
+}
+
+@media screen and (max-width: 1079px) {
+  .items {
+    width: 644px;
+  }
+}
+
+@media screen and (max-width: 719px) {
+  .items {
+    width: 100%;
+  }
+}

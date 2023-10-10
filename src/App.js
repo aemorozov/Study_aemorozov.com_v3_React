@@ -58,7 +58,7 @@ function App(props) {
               <Route path={props.menuItems.traveling.url} element={<Traveling page={props.menuItems.traveling} />} />
               <Route
                 path={props.menuItems.development.url}
-                element={<Development page={props.menuItems.development} />}
+                element={<Development page={props.menuItems.development} forDevPage={props.forDevPage} />}
               />
               <Route path={props.menuItems.contacts.url} element={<Contacts page={props.menuItems.contacts} />} />
               <Route path={props.menuItems.blog.url} element={<Blog page={props.menuItems.blog} />} />
