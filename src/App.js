@@ -45,6 +45,7 @@ function App(props) {
             backButton={backButton}
             setBackButton={setBackButton}
             backAddress={backAddress}
+            pageName={props.menuItems}
           />
           <div className="contentBlock">
             <Routes>

@@ -1,8 +1,8 @@
 .item {
-  min-width: 300px;
-  height: 300px;
   border-radius: 15px;
+  height: 150px;
   margin: 10px;
+  min-width: 150px;
   position: relative;
 }
 
@@ -14,28 +14,30 @@
 }
 
 .content {
-  position: absolute;
+  background-color: hsl(0deg 3% 93% / 85%);
+  border-radius: 15px;
   bottom: 10px;
+  color: #172223;
   left: 10px;
   padding: 0 10px;
-  border-radius: 15px;
-  background-color: rgba(237, 236, 236, 0.8);
-  color: rgb(48, 70, 71);
+  position: absolute;
   text-align: left;
-  width: 87%;
+  width: 74%;
 }
 
 .title {
-  font-size: 24px;
+  font-size: 14px;
+  margin: 5px 0;
 }
 
 .description {
-  font-size: 14px;
+  font-size: 12px;
+  margin: 5px 0;
 }
 
-@media screen and (max-width: 719px) {
+@media screen and (max-width: 780px) {
   .item {
-    width: 90%;
-    margin: 20px auto;
+    width: 100%;
+    margin: 3px;
   }
 }

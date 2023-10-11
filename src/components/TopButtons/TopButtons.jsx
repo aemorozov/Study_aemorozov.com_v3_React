@@ -1,8 +1,5 @@
 import styles from "./TopButtons.module.css";
-import { useNavigate } from "react-router-dom";
-import { changeBackButton, letsGoBack } from "../../functions/backButton/backButton";
 import { Link } from "react-router-dom";
-import { useState } from "react";
 
 function TopButtons(props) {
   return (
@@ -14,6 +11,7 @@ function TopButtons(props) {
           </p>
         </div>
       </Link>
+      <div>{console.log(props.pageName)}</div>
       <div
         className={styles.forBurgerMenu}
         onClick={() => {

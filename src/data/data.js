@@ -63,7 +63,7 @@ export const forDevPage = [
         imgUrl: process.env.PUBLIC_URL + "img/forDevPage/AnyDesk_Logo_red.png",
         alt: "AnyDesk for my friends",
         title: "AnyDesk",
-        description: "This is fast link from my server. This is remote connection app.",
+        description: "Fast download link. This is remote connection app.",
         version: "7.1.16",
         link: process.env.PUBLIC_URL + "../programs/anydesk-7-1-16.exe"
     },
@@ -71,7 +71,7 @@ export const forDevPage = [
         imgUrl: process.env.PUBLIC_URL + "img/forDevPage/GWXU70gOyWQVziFvkcmL.jpg",
         alt: "Deleting Avast app",
         title: "Avast Clear",
-        description: "This is fast link from my server. Delete this hell app.",
+        description: "Fast download link. App for delete Avast Antivirus.",
         version: "N/A",
         link: process.env.PUBLIC_URL + "../programs/avastclear.exe"
     },

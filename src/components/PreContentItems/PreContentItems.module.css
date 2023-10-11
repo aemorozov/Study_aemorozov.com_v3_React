@@ -6,14 +6,14 @@
   margin: 20px auto;
 }
 
-@media screen and (max-width: 1079px) {
+/* @media screen and (max-width: 1079px) {
   .items {
     width: 644px;
   }
-}
+} */
 
-@media screen and (max-width: 719px) {
+/* @media screen and (max-width: 719px) {
   .items {
     width: 100%;
   }
-}
+} */

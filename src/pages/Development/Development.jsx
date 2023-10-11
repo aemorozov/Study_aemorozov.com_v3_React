@@ -9,7 +9,7 @@ function Development(props) {
       <HeadMeta page={props.page} />
       <h1 className="h1 alignCenter">{props.page.name}</h1>
       <h2 className="alignCenter" style={{ marginTop: 50 + "px", marginBottom: 0 }}>
-        Useful apps
+        Useful apps for Windows
       </h2>
       <PreContentItems forDevPage={props.forDevPage} />
     </div>
