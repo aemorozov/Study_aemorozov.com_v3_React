@@ -2,7 +2,7 @@
   display: flex;
   align-content: center;
   flex-wrap: wrap;
-  width: fit-content;
+  width: 510px;
   margin: 20px auto;
 }
 
@@ -12,8 +12,9 @@
   }
 } */
 
-/* @media screen and (max-width: 719px) {
+@media screen and (max-width: 574px) {
   .items {
-    width: 100%;
+    flex-direction: column;
+    width: auto;
   }
-} */
+}

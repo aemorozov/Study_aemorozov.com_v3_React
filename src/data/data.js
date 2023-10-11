@@ -75,6 +75,38 @@ export const forDevPage = [
         version: "N/A",
         link: process.env.PUBLIC_URL + "../programs/avastclear.exe"
     },
+    {
+        imgUrl: process.env.PUBLIC_URL + "img/forDevPage/f3b904166cd767a7c2ba19204435ad6e.png",
+        alt: "Auslogics Boostspeed 5.5.1.0",
+        title: "BoostSpeed",
+        description: "Fast download link. App for clear Windows.",
+        version: "5.5.1.0",
+        link: process.env.PUBLIC_URL + "../programs/Auslogics_BoostSpeed_5.5.1.0.zip"
+    },
+    {
+        imgUrl: process.env.PUBLIC_URL + "img/forDevPage/cam-box-164x231-1.png",
+        alt: "Free cam 8",
+        title: "Free Cam",
+        description: "Fast download link. App for screen record.",
+        version: "8.7.0",
+        link: process.env.PUBLIC_URL + "../programs/free_cam_ru_8_7_0.msi"
+    },
+    {
+        imgUrl: process.env.PUBLIC_URL + "img/forDevPage/PlhlF0j9VbFwmGZvrf37Vg.jpeg",
+        alt: "WinRAR",
+        title: "WinRAR",
+        description: "Fast download link. Classic WinRAR.",
+        version: "5.2.0",
+        link: process.env.PUBLIC_URL + "../programs/winrar-x64-520.exe"
+    },
+    {
+        imgUrl: process.env.PUBLIC_URL + "img/forDevPage/Wo-Mic-Apk-Download.webp",
+        alt: "wo mic client setup",
+        title: "WO Mic",
+        description: "Fast download link. You can use your phone as laptop's microphone.",
+        version: "N/A",
+        link: process.env.PUBLIC_URL + "../programs/wo_mic_client_setup.exe"
+    },
 ]
 
 
