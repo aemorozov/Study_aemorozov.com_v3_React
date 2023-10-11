@@ -1,5 +1,6 @@
 import styles from "./TopButtons.module.css";
 import { Link } from "react-router-dom";
+import Title from "../Title/Title";
 
 function TopButtons(props) {
   return (
@@ -11,7 +12,7 @@ function TopButtons(props) {
           </p>
         </div>
       </Link>
-      <div>{console.log(props.pageName)}</div>
+      <Title />
       <div
         className={styles.forBurgerMenu}
         onClick={() => {

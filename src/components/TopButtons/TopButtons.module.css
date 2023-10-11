@@ -14,11 +14,11 @@
 
 .backButtonBlock {
   width: 100px;
-  padding: 20px 10px 20px 0px;
+  padding: 20px 0px 20px 0px;
   font-size: 24px;
   font-weight: 600;
   text-align: center;
-  cursor: default;
+  cursor: pointer;
 }
 
 .backButton {
@@ -47,9 +47,12 @@
 
 .forBurgerMenu {
   margin-top: 3px;
-  padding: 18px;
   cursor: pointer;
   display: flex;
+  width: 100px;
+  box-sizing: border-box;
+  padding: 15px;
+  padding-left: 30px;
 }
 
 @media screen and (max-width: 1023px) {

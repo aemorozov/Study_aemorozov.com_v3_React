@@ -6,7 +6,6 @@ function Traveling(props) {
   return (
     <div>
       <HeadMeta page={props.page} />
-      <h1 className="h1 alignCenter">{props.page.name}</h1>
       <p className="alignCenter">Content is in developing</p>
     </div>
   );
