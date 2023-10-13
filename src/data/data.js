@@ -1,3 +1,5 @@
+import { FixTildaBugs } from "../pages/Development/FixTildaBugs/FixTildaBugs";
+
 export const menuItems = {
     home: {
         url: "/",
@@ -65,7 +67,7 @@ export const forDevPage = [
         title: "AnyDesk",
         description: "Fast download link. This is remote connection app.",
         version: "7.1.16",
-        link: process.env.PUBLIC_URL + "../programs/anydesk-7-1-16.exe"
+        link: process.env.PUBLIC_URL + "../programs/anydesk-7-1-16.exe",
     },
     {
         imgUrl: process.env.PUBLIC_URL + "img/forDevPage/GWXU70gOyWQVziFvkcmL.jpg",
@@ -73,7 +75,7 @@ export const forDevPage = [
         title: "Avast Clear",
         description: "Fast download link. App for delete Avast Antivirus.",
         version: "N/A",
-        link: process.env.PUBLIC_URL + "../programs/avastclear.exe"
+        link: process.env.PUBLIC_URL + "../programs/avastclear.exe",
     },
     {
         imgUrl: process.env.PUBLIC_URL + "img/forDevPage/f3b904166cd767a7c2ba19204435ad6e.png",
@@ -81,7 +83,7 @@ export const forDevPage = [
         title: "BoostSpeed",
         description: "Fast download link. App for clear Windows.",
         version: "5.5.1.0",
-        link: process.env.PUBLIC_URL + "../programs/Auslogics_BoostSpeed_5.5.1.0.zip"
+        link: process.env.PUBLIC_URL + "../programs/Auslogics_BoostSpeed_5.5.1.0.zip",
     },
     {
         imgUrl: process.env.PUBLIC_URL + "img/forDevPage/cam-box-164x231-1.png",
@@ -89,7 +91,7 @@ export const forDevPage = [
         title: "Free Cam",
         description: "Fast download link. App for screen record.",
         version: "8.7.0",
-        link: process.env.PUBLIC_URL + "../programs/free_cam_ru_8_7_0.msi"
+        link: process.env.PUBLIC_URL + "../programs/free_cam_ru_8_7_0.msi",
     },
     {
         imgUrl: process.env.PUBLIC_URL + "img/forDevPage/PlhlF0j9VbFwmGZvrf37Vg.jpeg",
@@ -97,7 +99,7 @@ export const forDevPage = [
         title: "WinRAR",
         description: "Fast download link. Classic WinRAR.",
         version: "5.2.0",
-        link: process.env.PUBLIC_URL + "../programs/winrar-x64-520.exe"
+        link: process.env.PUBLIC_URL + "../programs/winrar-x64-520.exe",
     },
     {
         imgUrl: process.env.PUBLIC_URL + "img/forDevPage/Wo-Mic-Apk-Download.webp",
@@ -105,8 +107,30 @@ export const forDevPage = [
         title: "WO Mic",
         description: "Fast download link. You can use your phone as laptop's microphone.",
         version: "N/A",
-        link: process.env.PUBLIC_URL + "../programs/wo_mic_client_setup.exe"
+        link: process.env.PUBLIC_URL + "../programs/wo_mic_client_setup.exe",
     },
-]
+];
 
+export const devPosts = [
+    {
+        imgUrl: process.env.PUBLIC_URL + "img/forDevPage/1643634019_14-papik-pro-p-tilda-logotip-14.png",
+        alt: "Fix Tilda bugs",
+        title: "Fix Tilda bugs",
+        date: "12.10.2023",
+        text: `As my mind Tilda is the best constructor for websites, but I can find bugs anywhere, and Tilda is not exception! 
+        When I made one of the commercial site, I found three bugs on this platform and report about these Tilda support team.`,
+        link: "/development/fix-tilda-bugs",
+        element: <FixTildaBugs />
+    },
+    {
+        imgUrl: process.env.PUBLIC_URL + "img/forDevPage/1643634019_14-papik-pro-p-tilda-logotip-14.png",
+        alt: "Fix Tilda bugs",
+        title: "2 Fix Tilda bugs 2",
+        date: "12.10.2023",
+        text: `As my mind Tilda is the best constructor for websites, but I can find bugs anywhere, and Tilda is not exception! 
+        When I made one of the commercial site, I found three bugs on this platform and report about these Tilda support team.`,
+        link: "/development/fix-tilda-bugs",
+        element: <FixTildaBugs />
+    },
 
+];

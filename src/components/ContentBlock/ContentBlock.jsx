@@ -8,7 +8,10 @@ export function ContentBlockLeftImg(props) {
         <div className={styles.content}>
           <img className={styles.img} src={props.data.imgUrl} alt={props.data.alt} />
           <div className={styles.text}>
-            <h1 className={styles.h1}>{props.data.title}</h1>
+            <h1 className={styles.h1}>
+              {props.data.title}
+              <span className={styles.date}>{props.data.date}</span>
+            </h1>
             <p className={styles.text__p}>{props.data.text}</p>
           </div>
         </div>

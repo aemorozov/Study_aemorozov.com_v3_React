@@ -6,7 +6,6 @@ function Index(props) {
   toTop();
   return (
     <>
-      {/* <h1 className="h1 alignCenter">Hello! My name is Aleksei Morozov.</h1> */}
       <HeadMeta page={props.page} />
       {props.forIndexPage.map((data) => {
         return <ContentBlockLeftImg data={data} key={data.title} />;

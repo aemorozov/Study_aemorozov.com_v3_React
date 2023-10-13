@@ -12,6 +12,7 @@ import { useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { changeBackButton, letsGoBack } from "./functions/backButton/backButton";
 import { autoCloseMenu } from "./functions/autoCloseMenu/autoCloseMenu";
+import { FixTildaBugs } from "./pages/Development/FixTildaBugs/FixTildaBugs";
 
 function App(props) {
   const [menuActive, setMenuActive] = useState(false);
@@ -59,11 +60,21 @@ function App(props) {
               <Route path={props.menuItems.traveling.url} element={<Traveling page={props.menuItems.traveling} />} />
               <Route
                 path={props.menuItems.development.url}
-                element={<Development page={props.menuItems.development} forDevPage={props.forDevPage} />}
+                element={
+                  <Development
+                    page={props.menuItems.development}
+                    forDevPage={props.forDevPage}
+                    devPosts={props.devPosts}
+                  />
+                }
               />
               <Route path={props.menuItems.contacts.url} element={<Contacts page={props.menuItems.contacts} />} />
               <Route path={props.menuItems.blog.url} element={<Blog page={props.menuItems.blog} />} />
               <Route path="/blog/post1" element={<Post1 />} />
+
+              {props.devPosts.map((item) => {
+                return <Route path={item.link} element={item.element} key={item.title} />;
+              })}
             </Routes>
           </div>
         </div>

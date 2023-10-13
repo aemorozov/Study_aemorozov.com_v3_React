@@ -4,7 +4,7 @@ import Title from "../Title/Title";
 
 function TopButtons(props) {
   return (
-    <div className={styles.topButtons}>
+    <div className={props.menuActive ? styles.topButtons + " " + styles.topButtonsAbsolute : styles.topButtons}>
       <Link to={props.backAddress} className={styles.backButtonBlock}>
         <div>
           <p className={!props.backButton ? styles.backButton : styles.backButton + " " + styles.opacity__1}>
