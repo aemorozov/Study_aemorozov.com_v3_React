@@ -122,15 +122,4 @@ export const devPosts = [
         link: "/development/fix-tilda-bugs",
         element: <FixTildaBugs />
     },
-    {
-        imgUrl: process.env.PUBLIC_URL + "img/forDevPage/1643634019_14-papik-pro-p-tilda-logotip-14.png",
-        alt: "Fix Tilda bugs",
-        title: "2 Fix Tilda bugs 2",
-        date: "12.10.2023",
-        text: `As my mind Tilda is the best constructor for websites, but I can find bugs anywhere, and Tilda is not exception! 
-        When I made one of the commercial site, I found three bugs on this platform and report about these Tilda support team.`,
-        link: "/development/fix-tilda-bugs",
-        element: <FixTildaBugs />
-    },
-
 ];
