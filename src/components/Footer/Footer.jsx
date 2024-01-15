@@ -5,10 +5,10 @@ function Footer() {
   return (
     <div className={styles.footer}>
       <div className={styles.linksBlock}>
-        <Link to="https://instagram.com/alexejmorozov?igshid=OGQ5ZDc2ODk2ZA==" target="_blank">
+        <Link to="https://www.instagram.com/ae.morozov?igsh=MW8ydmJkZHNxNDNnZw%3D%3D&utm_source=qr" target="_blank">
           <img
             className={styles.insta}
-            src={process.env.PUBLIC_URL + "img/Instagram-logo.png"}
+            src={window.location.origin + "/img/Instagram-logo.png"}
             alt="aemorozov instargram"
           />
         </Link>

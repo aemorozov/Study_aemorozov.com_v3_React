@@ -12,7 +12,6 @@ import { useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { changeBackButton, letsGoBack } from "./functions/backButton/backButton";
 import { autoCloseMenu } from "./functions/autoCloseMenu/autoCloseMenu";
-import { FixTildaBugs } from "./pages/Development/FixTildaBugs/FixTildaBugs";
 
 function App(props) {
   const [menuActive, setMenuActive] = useState(false);
