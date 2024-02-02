@@ -68,7 +68,7 @@ export const forDevPage = [
         title: "AnyDesk",
         description: "Fast download link. This is remote connection app.",
         version: "7.1.16",
-        link: window.location.origin + "../programs/anydesk-7-1-16.exe",
+        link: window.location.origin + "/programs/anydesk-7-1-16.exe",
     },
     {
         imgUrl: "img/forDevPage/GWXU70gOyWQVziFvkcmL.jpg",
@@ -76,7 +76,7 @@ export const forDevPage = [
         title: "Avast Clear",
         description: "Fast download link. App for delete Avast Antivirus.",
         version: "N/A",
-        link: window.location.origin + "../programs/avastclear.exe",
+        link: window.location.origin + "/programs/avastclear.exe",
     },
     {
         imgUrl: "img/forDevPage/f3b904166cd767a7c2ba19204435ad6e.png",
@@ -84,7 +84,7 @@ export const forDevPage = [
         title: "BoostSpeed",
         description: "Fast download link. App for clear Windows.",
         version: "5.5.1.0",
-        link: window.location.origin + "../programs/Auslogics_BoostSpeed_5.5.1.0.zip",
+        link: window.location.origin + "/programs/Auslogics_BoostSpeed_5.5.1.0.zip",
     },
     {
         imgUrl: "img/forDevPage/cam-box-164x231-1.png",
@@ -92,7 +92,7 @@ export const forDevPage = [
         title: "Free Cam",
         description: "Fast download link. App for screen record.",
         version: "8.7.0",
-        link: window.location.origin + "../programs/free_cam_ru_8_7_0.msi",
+        link: window.location.origin + "/programs/free_cam_ru_8_7_0.msi",
     },
     {
         imgUrl: "img/forDevPage/PlhlF0j9VbFwmGZvrf37Vg.jpeg",
@@ -100,7 +100,7 @@ export const forDevPage = [
         title: "WinRAR",
         description: "Fast download link. Classic WinRAR.",
         version: "5.2.0",
-        link: window.location.origin + "../programs/winrar-x64-520.exe",
+        link: window.location.origin + "/programs/winrar-x64-520.exe",
     },
     {
         imgUrl: "img/forDevPage/Wo-Mic-Apk-Download.webp",
@@ -108,7 +108,7 @@ export const forDevPage = [
         title: "WO Mic",
         description: "Fast download link. You can use your phone as laptop's microphone.",
         version: "N/A",
-        link: window.location.origin + "../programs/wo_mic_client_setup.exe",
+        link: window.location.origin + "/programs/wo_mic_client_setup.exe",
     },
 ];
 
