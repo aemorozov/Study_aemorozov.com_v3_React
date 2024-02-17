@@ -10,12 +10,15 @@ export const FixTildaBugs = () => {
         <img src={window.location.origin + "/" + devPosts[0].imgUrl} className={styles.img__block} />
         <div className={styles.info__block}>
           <h1 className={styles.h1__title}>
-            Post info
-            <span className={styles.date}>date</span>
+            {devPosts[0].title}
+            <span className={styles.date}>{devPosts[0].date}</span>
           </h1>
+          <div className={styles.text__block}>
+            {devPosts[0].text}
+            {devPosts[0].fullText()}
+          </div>
         </div>
       </div>
-      <div className={styles.text__block}>Post text</div>
     </div>
   );
 };

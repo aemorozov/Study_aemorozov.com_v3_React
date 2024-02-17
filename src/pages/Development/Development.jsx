@@ -13,12 +13,6 @@ function Development(props) {
       {props.devPosts.map((item) => {
         return <ContentBlockLeftImg data={item} key={item.title} />;
       })}
-
-      <CV />
-      <h2 className="alignCenter" style={{ marginTop: 50 + "px", marginBottom: 0 }}>
-        Fast download links
-      </h2>
-      <PreContentItems forDevPage={props.forDevPage} />
     </div>
   );
 }

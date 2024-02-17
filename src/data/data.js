@@ -1,5 +1,5 @@
 import { FixTildaBugs } from "../pages/Development/FixTildaBugs/FixTildaBugs";
-
+// import fixTildaBugsImg1 from "/img/Screenshot2024-02-17140144.png"
 
 export const menuItems = {
     home: {
@@ -33,8 +33,7 @@ export const forIndexPage = [
         text: `Hello! My name is Aleksei. In this developer part of my life I will write about my projects and work.
         I have various experience in development, computer technologies and repair electronics. 
         Right now I am developing Single Page Applications (SPA) with React, API, JavaScript and other technologies for a little med-tech startup, 
-        as well as I work in repair shop with computers and security networks.
-        In this block you can download my CV and read more about my professional life.`,
+        as well as I work in repair shop with computers and security networks.`,
     },
     {
         imgUrl: "img/photo_2023-08-23_22-46-32.jpg",
@@ -112,16 +111,56 @@ export const forDevPage = [
     },
 ];
 
+const stylesForPostImg = {
+    width: 100 + "%",
+    marginBottom: 30 + "px",
+    borderRadius: 20 + "px",
+    boxShadow: "1px 1px 5px 5px rgba(34, 60, 80, 0.08)"
+}
+
 export const devPosts = [
     {
+        title: "Fix Tilda bugs",
         imgUrl: "img/forDevPage/1643634019_14-papik-pro-p-tilda-logotip-14.png",
         alt: "Fix Tilda bugs",
-        title: "Fix Tilda bugs",
         date: "12.10.2023",
-        text: `As my mind Tilda is the best constructor for websites, but I can find bugs anywhere, and Tilda is not exception! 
-        When I made one of the commercial site, I found three bugs on this platform and report about these Tilda support team.`,
+        text: `As my mind Tilda is the best constructor for websites, but I can find bugs anywhere, 
+        and Tilda is not exception! When I made one of the commercial site, I found three bugs on this 
+        platform and report about these Tilda support team.`,
         link: "/development/fix-tilda-bugs",
         post: 'Text for post',
+        fullText: () => {
+            return (
+                <ul>
+                    <li>
+                        <strong>You can't use 3 languages in the one website.</strong>
+                        <p>
+                            This problem is strange for me - you can use only one language for the one website (in "html" tag only one
+                            option like lang="en"). I fixed it by my little script, which look to page address and change language for
+                            real page language.
+                        </p>
+                        <img style={stylesForPostImg} src="/img/Screenshot2024-02-17140144.png" alt="You can't use 3 languages in the one website." />
+                    </li>
+                    <li>
+                        <strong>Missing closing value quote in the alt tag.</strong>
+                        <p>The IM07 block has a problem with the alt attribute of the img tag, it is missing the closing value quote,
+                            but only if the blocks are in the correct order. If you check the "Flip horizontally" checkbox, the quote
+                            miraculously returns.
+                        </p>
+                        <img style={stylesForPostImg} src="/img/Screenshot2024-02-17142532.png" alt="Missing closing value quote in the alt tag." />
+                    </li>
+                    <li>
+                        <strong>The height in px is not explicitly specified for images.</strong>
+                        <p>
+                            In the ME303 and FR206 blocks, the height in px is not explicitly specified for images; all sorts of analyzers
+                            and search engine robots usually complain about this. I fixed this with a script that collects similar pictures
+                            and forces them to have a height.
+                        </p>
+                        <img style={stylesForPostImg} src="/img/Screenshot2024-02-17144005.png" alt="The height in px is not explicitly specified for images." />
+                    </li>
+                </ul >
+            )
+        },
         element: <FixTildaBugs />
     },
 ];

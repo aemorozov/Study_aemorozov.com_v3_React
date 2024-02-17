@@ -49,6 +49,8 @@
   color: #005057;
   text-align: left;
   font-size: 14px;
+  max-height: 111px;
+  overflow: hidden;
 }
 
 @media screen and (max-width: 1000px) {

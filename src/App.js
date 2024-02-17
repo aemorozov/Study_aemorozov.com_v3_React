@@ -53,7 +53,7 @@ function App(props) {
                 exact
                 path={props.menuItems.home.url}
                 element={
-                  <Index page={props.menuItems.home} menuItems={props.menuItems} forIndexPage={props.forIndexPage} />
+                  <Index page={props.menuItems.home} menuItems={props.menuItems} forIndexPage={props.forIndexPage} forDevPage={props.forDevPage} />
                 }
               />
               <Route path={props.menuItems.traveling.url} element={<Traveling page={props.menuItems.traveling} />} />

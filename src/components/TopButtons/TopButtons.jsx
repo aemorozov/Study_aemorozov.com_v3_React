@@ -1,6 +1,7 @@
 import styles from "./TopButtons.module.css";
 import { Link } from "react-router-dom";
 import Title from "../Title/Title";
+import toTop from "../../functions/toTop/toTop";
 
 function TopButtons(props) {
   return (
@@ -17,6 +18,7 @@ function TopButtons(props) {
         className={styles.forBurgerMenu}
         onClick={() => {
           props.setMenuActive(!props.menuActive);
+          toTop();
         }}
       >
         <div className={styles.menuButton}></div>
