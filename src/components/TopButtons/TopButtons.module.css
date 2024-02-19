@@ -12,10 +12,17 @@
   -webkit-box-shadow: 0 1px 10px 1px rgba(34, 60, 80, 0.15);
   -moz-box-shadow: 0 1px 10px 1px rgba(34, 60, 80, 0.15);
   box-shadow: 0 1px 10px 1px rgba(34, 60, 80, 0.15);
+  top: 25px;
+  transition: 0.3s ease;
 }
 
 .topButtonsAbsolute {
-  position: absolute;
+  position: absolute !important;
+  top: 255px !important;
+  /* position: sticky;
+  top: 290px;
+  margin: 0 auto;
+  max-width: 100%; */
 }
 
 .backButtonBlock {

@@ -5,7 +5,7 @@ import { CV } from "../../components/CV/CV";
 import PreContentItems from "../../components/PreContentItems/PreContentItems";
 
 function Index(props) {
-  console.log(props);
+  // console.log(props);
   toTop();
   return (
     <>
