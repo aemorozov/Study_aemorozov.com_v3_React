@@ -1,5 +1,4 @@
-import { FixTildaBugs } from "../pages/Development/FixTildaBugs/FixTildaBugs";
-// import fixTildaBugsImg1 from "/img/Screenshot2024-02-17140144.png"
+import { Post } from "../pages/Development/Post/Post";
 
 export const menuItems = {
     home: {
@@ -118,6 +117,17 @@ const stylesForPostImg = {
     boxShadow: "1px 1px 5px 5px rgba(34, 60, 80, 0.08)"
 }
 
+const links = {
+    display: "block",
+    width: "max-content",
+    padding: "10px 30px",
+    minWidth: 80 + "px",
+    color: "#eee",
+    background: "#006d77",
+    borderRadius: "20px",
+    margin: "50px auto 30px auto"
+}
+
 export const devPosts = [
     {
         title: "Fix Tilda bugs",
@@ -128,8 +138,7 @@ export const devPosts = [
         and Tilda is not exception! When I made one of the commercial site, I found three bugs on this 
         platform and report about these Tilda support team.`,
         link: "/development/fix-tilda-bugs",
-        post: 'Text for post',
-        fullText: () => {
+        fullJSX: () => {
             return (
                 <ul>
                     <li>
@@ -161,6 +170,70 @@ export const devPosts = [
                 </ul >
             )
         },
-        element: <FixTildaBugs />
+        element: <Post id={0} />
+    },
+    {
+        title: "Snake_1.5",
+        imgUrl: "img/forDevPage/Screenshot2024-02-19155022.png",
+        alt: "Snake_1.5",
+        date: "19.02.2024",
+        text: `This is my first big project, which I wrote in 2020 with vanilla JS and a lot of math operations. 
+        From time to time I really play this game and I like it, you should try it too.`,
+        link: "/development/snake_game_1.5",
+        fullJSX: () => {
+            return (
+                <>
+                    <p>
+                        That game is my real project. I did it in night after work, not every day, but regularly,
+                        because I like JS and wanted to create something cool. And I did it.
+                    </p>
+                    <strong>Snake_1.0</strong>
+                    <ul>
+                        <li>the logic of movement to the right, left, up, down has been created</li>
+                        <li>PC keyboard control created</li>
+                        <li>the logic of transitions at field boundaries was created</li>
+                        <li>the logic for the random appearance of a target has been created</li>
+                        <li>the logic for catching a target has been created</li>
+                        <li>a final screen with a score and a new game button has been created</li>
+                        <li>removed a bug when random squares appeared in the snake’s body</li>
+                        <li>bugs with transitions at field boundaries have been fixed</li>
+                        <li>tail collision logic created</li>
+                    </ul>
+
+                    <strong>Snake_1.1</strong>
+                    <ul>
+                        <li>added field dimension (3 versions)</li>
+                        <li>added start screen</li>
+                        <li>added the ability to select field size</li>
+                        <li>added the ability to select speed</li>
+                    </ul>
+
+                    <strong>Snake_1.2</strong>
+                    <ul>
+                        <li>added the ability to control from the touchscreen</li>
+                    </ul>
+
+                    <strong>Snake_1.3</strong>
+                    <ul>
+                        <li>removed the bug "collision with the tail when quickly changing the direction of movement twice"</li>
+                        <li>optimized field and speed selection code, code compressed into 40 lines</li>
+                    </ul>
+
+                    <strong>Snake_1.4</strong>
+                    <ul>
+                        <li>added neon glow</li>
+                        <li>moved the repeated code for coloring and extinguishing the color of the snake into a separate function forIAndESquares</li>
+                        <li>decided that choosing 2 conditions before the game is too boring and introduced a choice of Difficulty, which changes the size of the field and speed</li>
+                    </ul>
+
+                    <strong>Snake_1.5</strong>
+                    <ul>
+                        <li>the speed of the snake increases by 2% at all levels for each square eaten. This can be tracked in the console.</li >
+                    </ul >
+                    <a href="https://www.aemorozov.com/archive/Snake/Snake_1.5/index.html" target="_blank" style={links}>Play (new tab)</a>
+                </>
+            )
+        },
+        element: <Post id={1} />
     },
 ];

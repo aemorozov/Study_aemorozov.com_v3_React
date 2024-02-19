@@ -10,9 +10,12 @@ function Development(props) {
     <div>
       <HeadMeta page={props.page} />
 
-      {props.devPosts.map((item) => {
-        return <ContentBlockLeftImg data={item} key={item.title} />;
-      })}
+      {props.devPosts
+        .slice(0)
+        .reverse()
+        .map((item) => {
+          return <ContentBlockLeftImg data={item} key={item.title} />;
+        })}
     </div>
   );
 }
