@@ -1,6 +1,6 @@
-import toTop from "../../../functions/toTop/toTop";
+import toTop from "../../functions/toTop/toTop";
 import styles from "./Post.module.css";
-import { devPosts } from "../../../data/data";
+import { devPosts } from "../../data/data";
 
 export const Post = (props) => {
   toTop();

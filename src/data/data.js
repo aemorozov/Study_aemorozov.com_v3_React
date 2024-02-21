@@ -1,4 +1,5 @@
-import { Post } from "../pages/Development/Post/Post";
+import { Link } from "react-router-dom";
+import { Post } from "../components/Post/Post";
 
 export const menuItems = {
     home: {
@@ -110,11 +111,15 @@ export const forDevPage = [
     },
 ];
 
+
+// Стили для JSX в постах
 const stylesForPostImg = {
     width: 100 + "%",
     marginBottom: 30 + "px",
     borderRadius: 20 + "px",
-    boxShadow: "1px 1px 5px 5px rgba(34, 60, 80, 0.08)"
+    boxShadow: "1px 1px 5px 5px rgba(34, 60, 80, 0.08)",
+    height: 200 + "px",
+    objectFit: "cover"
 }
 
 const links = {
@@ -171,6 +176,87 @@ export const devPosts = [
             )
         },
         element: <Post id={0} />
+    },
+    {
+        title: "Little JS scripts",
+        imgUrl: "img/forDevPage/Screenshot2024-02-21102152.png",
+        alt: "Little JS scripts",
+        date: "20.02.2024",
+        text: `This post is about my scripts for some project, which I did from 2020 to 2023. `,
+        link: "/development/little-JS-scripts",
+        fullJSX: () => {
+            return (
+                <>
+                    <ul>
+                        <li>
+                            <p><a href="/archive/CircleText/index.html" target="_blank" style={{ color: "#003057" }}>
+                                <strong>CircleText (new tab) </strong>
+                            </a>
+                                - if your designer is crazy and want to add circle text into the web project.</p>
+                            <p><a href="/archive/CircleText/CircleText.zip" target="_blank" style={{ color: "#003057" }}>Download CircleText (zip)</a></p>
+                        </li>
+                        <li>
+                            <p><a href="/archive/DragAndDrop/index.html" target="_blank" style={{ color: "#003057" }}>
+                                <strong>DragAndDrop (new tab) </strong>
+                            </a>
+                                - do you need drag and drop any objects in your project? It's easy.</p>
+                            <p><a href="/archive/DragAndDrop/DragAndDrop.zip" target="_blank" style={{ color: "#003057" }}>Download DragAndDrop (zip)</a></p>
+                        </li>
+                        <li>
+                            <p><a href="/archive/DynamicHorizontalMenu/index.html" target="_blank" style={{ color: "#003057" }}>
+                                <strong>DynamicHorizontalMenu (new tab) </strong>
+                            </a>
+                                - classic horizontal menu, but stop, no, it's dynamic!</p>
+                            <p><a href="/archive/DynamicHorizontalMenu/DynamicHorizontalMenu.zip" target="_blank" style={{ color: "#003057" }}>Download DynamicHorizontalMenu (zip)</a></p>
+                        </li>
+                        <li>
+                            <p><a href="/archive/DynamicMobileMenu/index.html" target="_blank" style={{ color: "#003057" }}>
+                                <strong>DynamicMobileMenu (new tab) </strong>
+                            </a>
+                                - mobile menu with JS. Now I do it with CSS only, but you can use JS.</p>
+                            <p><a href="/archive/DynamicMobileMenu/DynamicMobileMenu.zip" target="_blank" style={{ color: "#003057" }}>Download DynamicMobileMenu (zip)</a></p>
+                        </li>
+                        <li>
+                            <p><a href="/archive/Opacity-text/index.html" target="_blank" style={{ color: "#003057" }}>
+                                <strong>OpacityText (new tab) </strong>
+                            </a>
+                                - code from real project, minimalistic and cool.</p>
+                            <p><a href="/archive/Opacity-text/Fade-in_text_aemorozov.zip" target="_blank" style={{ color: "#003057" }}>Download OpacityText (zip)</a></p>
+                        </li>
+                        <li>
+                            <p><a href="/archive/PrintingTextLines/index.html" target="_blank" style={{ color: "#003057" }}>
+                                <strong>PrintingTextLines (new tab) </strong>
+                            </a>
+                                - do you need printing text with two lines? Easy.</p>
+                            <p><a href="/archive/PrintingTextLines/PrintingTextLines.zip" target="_blank" style={{ color: "#003057" }}>Download PrintingTextLines (zip)</a></p>
+                        </li>
+                        <li>
+                            <p><a href="/archive/SliderForReviews/index.html" target="_blank" style={{ color: "#003057" }}>
+                                <strong>SliderForReviews (new tab) </strong>
+                            </a>
+                                - one of the sliders with popup. Some times I use it in real projects.</p>
+                            <p><a href="/archive/SliderForReviews/TestimonialsSliderAndPopup.zip" target="_blank" style={{ color: "#003057" }}>Download SliderForReviews (zip)</a></p>
+                        </li>
+                        <li>
+                            <p><a href="/archive/SliderForWeb/index.html" target="_blank" style={{ color: "#003057" }}>
+                                <strong>SliderForWeb (new tab) </strong>
+                            </a>
+                                - beautiful slider for some image cards.</p>
+                            <p><a href="/archive/SliderForWeb/SliderForWeb.zip" target="_blank" style={{ color: "#003057" }}>Download SliderForWeb (zip)</a></p>
+                        </li>
+                        <li>
+                            <p><a href="/archive/SuperSlider/index.html" target="_blank" style={{ color: "#003057" }}>
+                                <strong>SuperSlider (new tab) </strong>
+                            </a>
+                                - cool slider for the little web-project.</p>
+                            <p><a href="/archive/SuperSlider/SuperSlider.zip" target="_blank" style={{ color: "#003057" }}>Download SuperSlider (zip)</a></p>
+                        </li>
+
+                    </ul>
+                </>
+            )
+        },
+        element: <Post id={1} />
     },
     {
         title: "Snake_1.5",
@@ -234,6 +320,6 @@ export const devPosts = [
                 </>
             )
         },
-        element: <Post id={1} />
+        element: <Post id={2} />
     },
 ];
