@@ -130,7 +130,7 @@ const links = {
     color: "#eee",
     background: "#006d77",
     borderRadius: "20px",
-    margin: "50px auto 30px auto"
+    margin: "30px auto 30px auto"
 }
 
 export const devPosts = [
@@ -259,6 +259,33 @@ export const devPosts = [
         element: <Post id={1} />
     },
     {
+        title: "DocInfo",
+        imgUrl: "img/forDevPage/Screenshot2024-02-22103228.png",
+        alt: "DocInfo",
+        date: "22.02.2024",
+        text: `This is little medtech startup, which I work fo free, because I like do something cool. 
+        I do frontend with React, use API, authorization, privet routes and create all of the interface.`,
+        link: "/development/docinfo",
+        fullJSX: () => {
+            return (
+                <>
+                    <p>
+                        One day I saw a message in a telegram, that one guy looking for frontend developers for his project.
+                        We met and talked about his idea, I liked it and I started working on this project. We do it because we want to
+                        get an experience in teamwork and React. We have a frontend, backend, QA guys, who help us and we want create
+                        the real product to help real clinics optimizing their business process.
+                    </p>
+                    <p>
+                        All the time I work with design, colors, content, API and logic. This work is fun for me, I like do that.
+                    </p>
+                    <a href="https://docinfoam-clinics.netlify.app/" target="_blank" style={links}>Open app (new tab)</a>
+                    <a href="https://github.com/DocInfoAM/frontend" target="_blank" style={links}>Git (new tab)</a>
+                </>
+            )
+        },
+        element: <Post id={2} />
+    },
+    {
         title: "Snake_1.5",
         imgUrl: "img/forDevPage/Screenshot2024-02-19155022.png",
         alt: "Snake_1.5",
@@ -320,6 +347,7 @@ export const devPosts = [
                 </>
             )
         },
-        element: <Post id={2} />
+        element: <Post id={3} />
     },
+
 ];
