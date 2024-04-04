@@ -72,7 +72,7 @@ export const forDevPage = [
     {
         imgUrl: "img/forDevPage/GWXU70gOyWQVziFvkcmL.jpg",
         alt: "Deleting Avast app",
-        title: "Avast Clear",
+        title: "Avast Cleaner",
         description: "Fast download link. App for delete Avast Antivirus.",
         version: "N/A",
         link: window.location.origin + "/programs/avastclear.exe",
@@ -263,7 +263,7 @@ export const devPosts = [
         imgUrl: "img/forDevPage/Screenshot2024-02-22103228.png",
         alt: "DocInfo",
         date: "22.02.2024",
-        text: `This is little medtech startup, which I work fo free, because I like do something cool. 
+        text: `This is a little medtech startup, which I work fo free, because I like do something cool. 
         I do frontend with React, use API, authorization, privet routes and create all of the interface.`,
         link: "/development/docinfo",
         fullJSX: () => {
@@ -272,11 +272,11 @@ export const devPosts = [
                     <p>
                         One day I saw a message in a telegram, that one guy looking for frontend developers for his project.
                         We met and talked about his idea, I liked it and I started working on this project. We do it because we want to
-                        get an experience in teamwork and React. We have a frontend, backend, QA guys, who help us and we want create
-                        the real product to help real clinics optimizing their business process.
+                        get an experience in teamwork and React. We have a frontend, backend, QA guys, who help us. We want to create
+                        the real product for help real clinics optimizing their business process.
                     </p>
                     <p>
-                        All the time I work with design, colors, content, API and logic. This work is fun for me, I like do that.
+                        All the time I work with design, colors, content, API and logic. This work is fun for me and I like do that.
                     </p>
                     <a href="https://docinfoam-clinics.netlify.app/" target="_blank" style={links}>Open app (new tab)</a>
                     <a href="https://github.com/DocInfoAM/frontend" target="_blank" style={links}>Git (new tab)</a>
@@ -351,3 +351,22 @@ export const devPosts = [
     },
 
 ];
+
+export const travelPosts = [
+    {
+        title: "Berlin 2020",
+        imgUrl: "img/forDevPage/1643634019_14-papik-pro-p-tilda-logotip-14.png",
+        alt: "Berlin",
+        date: "24.02.2024",
+        text: `As my mind Tilda is the best constructor for websites, but I can find bugs anywhere, 
+            and Tilda is not exception! When I made one of the commercial site, I found three bugs on this 
+            platform and report about these Tilda support team.`,
+        link: "/traveling/berlin-2020",
+        fullJSX: () => {
+            return (
+                <p>Berlin 2020</p>
+            )
+        },
+        element: <Post id={0} />
+    }
+]

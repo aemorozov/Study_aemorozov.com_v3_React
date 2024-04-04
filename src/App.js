@@ -56,7 +56,7 @@ function App(props) {
                   <Index page={props.menuItems.home} menuItems={props.menuItems} forIndexPage={props.forIndexPage} forDevPage={props.forDevPage} />
                 }
               />
-              <Route path={props.menuItems.traveling.url} element={<Traveling page={props.menuItems.traveling} />} />
+              <Route path={props.menuItems.traveling.url} element={<Traveling page={props.menuItems.traveling} travelPosts={props.travelPosts} />} />
               <Route
                 path={props.menuItems.development.url}
                 element={
