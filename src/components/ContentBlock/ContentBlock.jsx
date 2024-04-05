@@ -1,7 +1,5 @@
 import { Link } from "react-router-dom";
 import styles from "./ContentBlock.module.css";
-import { forDevPage } from "./../../data/data";
-import { Post } from "../Post/Post";
 
 export function ContentBlockLeftImg(props) {
   return (

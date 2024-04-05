@@ -349,6 +349,53 @@ export const devPosts = [
         },
         element: <Post id={3} />
     },
+    {
+        title: "sahak.am website",
+        imgUrl: "img/forDevPage/sahak.png",
+        alt: "sahak.am website",
+        date: "06.04.2024",
+        text: `This is website for company in Armenia, Yerevan. I used CMS Tilda and did SEO with cool result. 
+        Today this website has "Top 3" in very perspective requires in search systems.`,
+        link: "/development/sahak-am",
+        fullJSX: () => {
+            return (
+                <>
+                    <p>
+                        This is new multilingual site for the company, where I work. The main goal was to create an SEO website
+                        and get good positions from search engines. Currently occupying TOP 3 positions for many key queries.
+                    </p>
+                    <a href="https://sahak.am/en" target="_blank" style={links}>sahak.am (new tab)</a>
+                </>)
+        },
+        element: <Post id={4} />
+    },
+    {
+        title: "Converter for Windows 1.0.2",
+        imgUrl: "img/forDevPage/Screenshot2024-04-05154906.png",
+        alt: "XML to BASE64 to JSON Converter for Windows 1.0.2",
+        date: "05.04.2024",
+        text: `This is demo of my commercial app for Windows. I named this demo "XML to BASE64 to JSON Converter". 
+        For development I used JavaScript, Electron JS, Express JS and Node JS. 
+        One of the fitch of the program is API License keys server.`,
+        link: "/development/converter-for-windows",
+        fullJSX: () => {
+            return (
+                <>
+                    <p>
+                        This is real program for Windows, you can setup it or use portable version. For convert you should
+                        enter license key and select any XML file. When you selected XML file program get request for the server and wait result.
+                        If result is Ok, program work. If key is wrong - you see "wrong license key".
+                        Result will be JSON with you data in base64.
+                    </p>
+                    <a href="https://github.com/aemorozov/Commercial_Converter_for_Windows" target="_blank" style={links}>GitHub (new tab)</a>
+                    <a href="https://www.aemorozov.com/archive/1.0.2_XML_to_BASE64_to_JSON_converter_for_Windows/XML to base64 to JSON convert ver 1.0.2/win-unpacked.zip" target="_blank" style={links}>Download portable file</a>
+                    <a href="https://www.aemorozov.com/archive/1.0.2_XML_to_BASE64_to_JSON_converter_for_Windows/XML to base64 to JSON convert ver 1.0.2/XML to base64 to JSON convert ver 1.0.2 Setup 1.0.2.exe" target="_blank" style={links}>Download setup file</a>
+
+                </>)
+        },
+        element: <Post id={5} />
+    },
+
 
 ];
 
