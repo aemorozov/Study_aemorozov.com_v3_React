@@ -53,7 +53,7 @@ ipcRenderer.on('what-about-keys', () => {
         })
             .then(response => response.json())
             .then(isKeyValid => {
-                if (!isKeyValid || isKeyValid.error === "This is privet party, go out") {
+                if (!isKeyValid || isKeyValid.error) {
                     const inputError = document.querySelector('textarea[name="json"]')
                     inputError.value = 'Wrong license key'
                 } else {
@@ -76,6 +76,7 @@ ipcRenderer.on('stored-key', (event, storedKey) => {
 ipcRenderer.on('process-files', async (event, filePaths) => {
 
     const keyInput = document.querySelector('.password-input')
+    const key = keyInput.value.trim();
     const textarea = document.querySelector('textarea[name="json"]')
 
     filePaths = filePaths.sort() // when we add two files, we should sort them by first letter

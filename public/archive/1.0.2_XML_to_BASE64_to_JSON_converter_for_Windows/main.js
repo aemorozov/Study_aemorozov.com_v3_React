@@ -21,7 +21,7 @@ function createWindow() {
         webPreferences: {
             nodeIntegration: true,
             contextIsolation: false,
-            devTools: false
+            // devTools: false
         },
     });
     mainWindow.loadFile('index.html');
@@ -45,11 +45,11 @@ app.on('ready', () => {
         }
     });
 
-    mainWindow.webContents.on('before-input-event', (event, input) => {
-        if (input.control && input.shift && input.key.toLowerCase() === 'i') {
-            event.preventDefault();
-        }
-    });
+    // mainWindow.webContents.on('before-input-event', (event, input) => {
+    //     if (input.control && input.shift && input.key.toLowerCase() === 'i') {
+    //         event.preventDefault();
+    //     }
+    // });
 
     if (app.commandLine.hasSwitch('inspect')) {
         console.error('Running with --inspect is not allowed.');
