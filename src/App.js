@@ -2,7 +2,7 @@ import "./App.css";
 import Header from "./components/Header/Header";
 import TopButtons from "./components/TopButtons/TopButtons";
 import Index from "./pages/Index/Index";
-import Development from "./pages/Development/Development";
+import Portfolio from "./pages/Portfolio/Portfolio";
 import Traveling from "./pages/Traveling/Traveling";
 import Contacts from "./pages/Contacts/Contacts";
 import Blog from "./pages/Blog/Blog";
@@ -56,19 +56,19 @@ function App(props) {
                   <Index page={props.menuItems.home} menuItems={props.menuItems} forIndexPage={props.forIndexPage} forDevPage={props.forDevPage} />
                 }
               />
-              <Route path={props.menuItems.traveling.url} element={<Traveling page={props.menuItems.traveling} travelPosts={props.travelPosts} />} />
+              {/* <Route path={props.menuItems.traveling.url} element={<Traveling page={props.menuItems.traveling} travelPosts={props.travelPosts} />} /> */}
               <Route
-                path={props.menuItems.development.url}
+                path={props.menuItems.portfolio.url}
                 element={
-                  <Development
-                    page={props.menuItems.development}
+                  <Portfolio
+                    page={props.menuItems.portfolio}
                     forDevPage={props.forDevPage}
                     devPosts={props.devPosts}
                   />
                 }
               />
               <Route path={props.menuItems.contacts.url} element={<Contacts page={props.menuItems.contacts} />} />
-              <Route path={props.menuItems.blog.url} element={<Blog page={props.menuItems.blog} />} />
+              {/* <Route path={props.menuItems.blog.url} element={<Blog page={props.menuItems.blog} />} /> */}
               <Route path="/blog/post1" element={<Post1 />} />
 
               {props.devPosts.map((item) => {

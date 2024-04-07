@@ -6,9 +6,9 @@ export const menuItems = {
         url: "/",
         name: "home",
     },
-    development: {
-        url: "/development",
-        name: "development",
+    portfolio: {
+        url: "/portfolio",
+        name: "portfolio",
     },
     traveling: {
         url: "/traveling",
@@ -27,13 +27,12 @@ export const menuItems = {
 export const forIndexPage = [
     {
         imgUrl: "img/photo_2023-08-23_22-46-34.jpg",
-        alt: "Aleksei Morozov - Development",
-        title: menuItems.development.name,
-        link: menuItems.development.url,
-        text: `Hello! My name is Aleksei. In this developer part of my life I will write about my projects and work.
-        I have various experience in development, computer technologies and repair electronics. 
-        Right now I am developing Single Page Applications (SPA) with React, API, JavaScript and other technologies for a little med-tech startup, 
-        as well as I work in repair shop with computers and security networks.`,
+        alt: "Aleksei Morozov - portfolio",
+        title: menuItems.portfolio.name,
+        link: menuItems.portfolio.url,
+        text: `Hello! My name is Aleksei. This is a little React App for the list of my projects. 
+        More information about my code you can find in my GitHub.
+        I have various experience in React JS, Node JS, Electron JS, API, CMS WordPress, Tilda and computer technologies and repair electronics.`,
     },
     // {
     //     imgUrl: "img/photo_2023-08-23_22-46-32.jpg",
@@ -126,7 +125,7 @@ const links = {
     display: "block",
     width: "max-content",
     padding: "10px 30px",
-    minWidth: 80 + "px",
+    minWidth: 200 + "px",
     color: "#eee",
     background: "#006d77",
     borderRadius: "20px",
@@ -142,7 +141,7 @@ export const devPosts = [
         text: `As my mind Tilda is the best constructor for websites, but I can find bugs anywhere, 
         and Tilda is not exception! When I made one of the commercial site, I found three bugs on this 
         platform and report about these Tilda support team.`,
-        link: "/development/fix-tilda-bugs",
+        link: "/portfolio/fix-tilda-bugs",
         fullJSX: () => {
             return (
                 <ul>
@@ -183,7 +182,7 @@ export const devPosts = [
         alt: "Little JS scripts",
         date: "20.02.2024",
         text: `This post is about my scripts for some project, which I did from 2020 to 2023. `,
-        link: "/development/little-JS-scripts",
+        link: "/portfolio/little-JS-scripts",
         fullJSX: () => {
             return (
                 <>
@@ -265,7 +264,7 @@ export const devPosts = [
         date: "22.02.2024",
         text: `This is a little medtech startup, which I work fo free, because I like do something cool. 
         I do frontend with React, use API, authorization, privet routes and create all of the interface.`,
-        link: "/development/docinfo",
+        link: "/portfolio/docinfo",
         fullJSX: () => {
             return (
                 <>
@@ -279,7 +278,7 @@ export const devPosts = [
                         All the time I work with design, colors, content, API and logic. This work is fun for me and I like do that.
                     </p>
                     <a href="https://docinfoam-clinics.netlify.app/" target="_blank" style={links}>Open app (new tab)</a>
-                    <a href="https://github.com/DocInfoAM/frontend" target="_blank" style={links}>Git (new tab)</a>
+                    <a href="https://github.com/DocInfoAM/frontend" target="_blank" style={links}>GitHub (new tab)</a>
                 </>
             )
         },
@@ -292,7 +291,7 @@ export const devPosts = [
         date: "19.02.2024",
         text: `This is my first big project, which I wrote in 2020 with vanilla JS and a lot of math operations. 
         From time to time I really play this game and I like it, you should try it too.`,
-        link: "/development/snake_game_1.5",
+        link: "/portfolio/snake_game_1.5",
         fullJSX: () => {
             return (
                 <>
@@ -344,6 +343,7 @@ export const devPosts = [
                         <li>the speed of the snake increases by 2% at all levels for each square eaten. This can be tracked in the console.</li >
                     </ul >
                     <a href="https://www.aemorozov.com/archive/Snake/Snake_1.5/index.html" target="_blank" style={links}>Play (new tab)</a>
+                    <a href="https://github.com/aemorozov/Study_game_Snake_v_1.5" target="_blank" style={links}>GitHub (new tab)</a>
                 </>
             )
         },
@@ -356,13 +356,13 @@ export const devPosts = [
         date: "06.04.2024",
         text: `This is website for company in Armenia, Yerevan. I used CMS Tilda and did SEO with cool result. 
         Today this website has "Top 3" in very perspective requires in search systems.`,
-        link: "/development/sahak-am",
+        link: "/portfolio/sahak-am",
         fullJSX: () => {
             return (
                 <>
                     <p>
                         This is new multilingual site for the company, where I work. The main goal was to create an SEO website
-                        and get good positions from search engines. Currently occupying TOP 3 positions for many key queries.
+                        and get good positions from search engines.
                     </p>
                     <a href="https://sahak.am/en" target="_blank" style={links}>sahak.am (new tab)</a>
                 </>)
@@ -375,9 +375,9 @@ export const devPosts = [
         alt: "XML to BASE64 to JSON Converter for Windows 1.0.2",
         date: "05.04.2024",
         text: `This is demo of my commercial app for Windows. I named this demo "XML to BASE64 to JSON Converter". 
-        For development I used JavaScript, Electron JS, Express JS and Node JS. 
+        For develop I used JavaScript, Electron JS, Express JS and Node JS. 
         One of the fitch of the program is API License keys server.`,
-        link: "/development/converter-for-windows",
+        link: "/portfolio/converter-for-windows",
         fullJSX: () => {
             return (
                 <>
@@ -388,15 +388,13 @@ export const devPosts = [
                         Result will be JSON with you data in base64.
                     </p>
                     <a href="https://github.com/aemorozov/Commercial_Converter_for_Windows" target="_blank" style={links}>GitHub (new tab)</a>
-                    <a href="https://www.aemorozov.com/archive/1.0.2_XML_to_BASE64_to_JSON_converter_for_Windows/XML to base64 to JSON convert ver 1.0.2/win-unpacked.zip" target="_blank" style={links}>Download portable file</a>
-                    <a href="https://www.aemorozov.com/archive/1.0.2_XML_to_BASE64_to_JSON_converter_for_Windows/XML to base64 to JSON convert ver 1.0.2/XML to base64 to JSON convert ver 1.0.2 Setup 1.0.2.exe" target="_blank" style={links}>Download setup file</a>
+                    <a href="https://aemorozov.com/archive/1.0.2_XML_to_BASE64_to_JSON_converter_for_Windows/XML_to_base64_to_JSON_convert_ver_1.0.2/win-unpacked.zip" target="_blank" style={links}>Download portable file</a>
+                    <a href="https://aemorozov.com/archive/1.0.2_XML_to_BASE64_to_JSON_converter_for_Windows/XML_to_base64_to_JSON_convert_ver_1.0.2/XML_to_base64_to_JSON_convert_ver_1.0.2_Setup.exe" target="_blank" style={links}>Download setup file</a>
 
                 </>)
         },
         element: <Post id={5} />
     },
-
-
 ];
 
 export const travelPosts = [
