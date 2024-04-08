@@ -258,34 +258,68 @@ export const devPosts = [
         element: <Post id={1} />
     },
     {
-        title: "DocInfo",
-        imgUrl: "img/forDevPage/Screenshot2024-02-22103228.png",
-        alt: "DocInfo",
-        date: "22.02.2024",
-        text: `This is a little medtech startup, which I work fo free, because I like do something cool. 
-        I do frontend with React, use API, authorization, privet routes and create all of the interface.`,
-        link: "/portfolio/docinfo",
+        title: "Shariki web game",
+        imgUrl: "img/forDevPage/Instagram-logo.png",
+        alt: "Shariki web game",
+        date: "06.04.2024",
+        text: `This is one of the test task from my interview experience. Shariki is not ended and has a lot of bugs, 
+        but this is very funny game and my wife plays that a lot of time. You should build three circles to the line.`,
+        link: "/portfolio/shariki",
         fullJSX: () => {
             return (
                 <>
-                    <p>
-                        One day I saw a message in a telegram, that one guy looking for frontend developers for his project.
-                        We met and talked about his idea, I liked it and I started working on this project. We do it because we want to
-                        get an experience in teamwork and React. We have a frontend, backend, QA guys, who help us. We want to create
-                        the real product for help real clinics optimizing their business process.
-                    </p>
-                    <p>
-                        All the time I work with design, colors, content, API and logic. This work is fun for me and I like do that.
-                    </p>
-                    <a href="https://docinfoam-clinics.netlify.app/" target="_blank" style={links}>Open app (new tab)</a>
-                    <a href="https://github.com/DocInfoAM/frontend" target="_blank" style={links}>GitHub (new tab)</a>
-                </>
-            )
+                    <a href="https://github.com/aemorozov/Study_game_Shariki" target="_blank" style={links}>GitHub (new tab)</a>
+                    <a href="https://shariki.vercel.app/" target="_blank" style={links}>Play online (new tab)</a>
+                </>)
         },
         element: <Post id={2} />
     },
     {
-        title: "Snake_1.5",
+        title: "sahak.am website",
+        imgUrl: "img/forDevPage/sahak.png",
+        alt: "sahak.am website",
+        date: "06.04.2024",
+        text: `This is website for company in Armenia, Yerevan. I used CMS Tilda and did SEO with cool result. 
+        Today this website has "Top 3" in very perspective requires in search systems.`,
+        link: "/portfolio/sahak-am",
+        fullJSX: () => {
+            return (
+                <>
+                    <p>
+                        This is new multilingual site for the company, where I work. The main goal was to create an SEO website
+                        and get good positions from search engines.
+                    </p>
+                    <a href="https://sahak.am/en" target="_blank" style={links}>sahak.am (new tab)</a>
+                </>)
+        },
+        element: <Post id={3} />
+    },
+    {
+        title: "AIM web game",
+        imgUrl: "img/forDevPage/Screenshot2024-04-08170608.png",
+        alt: "AIM web game",
+        date: "08.04.2024",
+        text: `AIM web game is one of the studies project, which I did in the start of my JS way. 
+        This game is really simple, you should click to the circles for fixed time. Some time maybe I will add server for this game and
+        port it for PC and mobile devices.`,
+        link: "/portfolio/aim-game",
+        fullJSX: () => {
+            return (
+                <>
+                    {/* <p>
+                        This is real program for Windows, you can setup it or use portable version. For convert you should
+                        enter license key and select any XML file. When you selected XML file program get request for the server and wait result.
+                        If result is Ok, program work. If key is wrong - you see "wrong license key".
+                        Result will be JSON with you data in base64.
+                    </p> */}
+                    <a href="https://github.com/aemorozov/Study_game_AIM_game" target="_blank" style={links}>GitHub (new tab)</a>
+                    <a href="https://aemorozov.com/archive/AIMGame/index.html" target="_blank" style={links}>Play online (new tab)</a>
+                </>)
+        },
+        element: <Post id={4} />
+    },
+    {
+        title: "Snake_1.5 web game",
         imgUrl: "img/forDevPage/Screenshot2024-02-19155022.png",
         alt: "Snake_1.5",
         date: "19.02.2024",
@@ -347,27 +381,34 @@ export const devPosts = [
                 </>
             )
         },
-        element: <Post id={3} />
+        element: <Post id={5} />
     },
     {
-        title: "sahak.am website",
-        imgUrl: "img/forDevPage/sahak.png",
-        alt: "sahak.am website",
-        date: "06.04.2024",
-        text: `This is website for company in Armenia, Yerevan. I used CMS Tilda and did SEO with cool result. 
-        Today this website has "Top 3" in very perspective requires in search systems.`,
-        link: "/portfolio/sahak-am",
+        title: "DocInfo startup",
+        imgUrl: "img/forDevPage/Screenshot2024-02-22103228.png",
+        alt: "DocInfo",
+        date: "22.02.2024",
+        text: `This is a little medtech startup, which I work fo free, because I like do something cool. 
+        I do frontend with React, use API, authorization, privet routes and create all of the interface.`,
+        link: "/portfolio/docinfo",
         fullJSX: () => {
             return (
                 <>
                     <p>
-                        This is new multilingual site for the company, where I work. The main goal was to create an SEO website
-                        and get good positions from search engines.
+                        One day I saw a message in a telegram, that one guy looking for frontend developers for his project.
+                        We met and talked about his idea, I liked it and I started working on this project. We do it because we want to
+                        get an experience in teamwork and React. We have a frontend, backend, QA guys, who help us. We want to create
+                        the real product for help real clinics optimizing their business process.
                     </p>
-                    <a href="https://sahak.am/en" target="_blank" style={links}>sahak.am (new tab)</a>
-                </>)
+                    <p>
+                        All the time I work with design, colors, content, API and logic. This work is fun for me and I like do that.
+                    </p>
+                    <a href="https://docinfoam-clinics.netlify.app/" target="_blank" style={links}>Open app (new tab)</a>
+                    <a href="https://github.com/DocInfoAM/frontend" target="_blank" style={links}>GitHub (new tab)</a>
+                </>
+            )
         },
-        element: <Post id={4} />
+        element: <Post id={6} />
     },
     {
         title: "Converter for Windows 1.0.2",
@@ -393,8 +434,9 @@ export const devPosts = [
 
                 </>)
         },
-        element: <Post id={5} />
+        element: <Post id={7} />
     },
+
 ];
 
 export const travelPosts = [
